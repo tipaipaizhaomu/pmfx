@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name=viewport content="width=device-width,initial-scale=0.3，target-densitydpi，user-scalable=yes">
+    <title>飘渺西游官方网站</title>
+    <link type="image/x-icon" href="http://cdnimg.wan5d.com/pmxy/img/favicon.ico" rel="shortcut icon" />
+    <style>
+        #wrapper {
+            width: 100px!important;
+            width: 80px;
+            }
+            .submitbutton {
+            float:left;
+            width: 40px;
+            height: 57px;
+            margin-top: 24px;
+            margin-right: 12px;
+            }
+
+            *html .submitbutton {
+            margin-top: 21px;
+            }
+
+            *+html .submitbutton {
+            margin-top: 21px;
+            }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(image/background.png);
+            background-repeat: no-repeat;
+            background-position: center 67px;
+        }
+        .diyihe {
+            height: 50px;
+        }
+        .logo {
+            height: 50px;
+            align-items: center;
+        }
+        .logo2 {
+            height: 40px;
+            align-items: center;
+        }
+        a {
+            text-decoration: none;
+        }
+        a:link {
+            color:rgb(0, 0, 0)
+        }
+        .diyihangwenben {
+            text-indent: 65em;
+            line-height: 60px;
+        }
+        .diyihangwenben:hover {
+            color:rgb(235, 52, 52);
+        }
+        .diyihangwenben a {
+            color: black;
+        }
+        .dd {
+            display: inline-block;
+            margin-top: 30px;
+            padding: 0 50px;
+            color: white;
+            font-size: 20px;
+            height:80px;
+            width: 1200px;
+            background: rgb(48, 49, 49,.9);
+            margin:0 auto;
+            border-radius: 10px;
+            position: absolute;
+            left:150px;
+            top:66px;
+        }
+        .dd a {
+            display: inline-block;
+            color: white;
+            padding: 25px 45px;
+        }
+        .dd > a:hover {
+            display: inline-block;
+            color: yellow;
+            border-bottom: 3px solid rgb(250, 125, 9);
+            background: linear-gradient(to top,rgb(150, 150, 57),#686868);
+        }
+        
+        .sub-nav {
+            display: block;
+            height: 0;
+            position:absolute;
+            top:80px;left:-150px;width:1600px;background:#000;
+            background:rgba(0,0,0,0.7);z-index:3;
+            transition: all .3s ease;
+             overflow: hidden;
+             box-sizing: border-box;
+             } 
+
+         .sub-nav-inner {
+                width: 1200px;
+                height: 240px;
+                margin:auto;
+                
+                zoom: 1;
+                padding:25px 0px;
+            }
+
+         .down-nav {
+                float:left;display:inline;padding: 25px 45px;text-align:center;white-space:nowrap;
+                padding: 0px 13px;
+               }
+
+         .down-nav a {
+                display: block;
+                 height:60px;
+                 width: 150px;
+                 line-height:60px;padding:0;color:rgb(255, 255, 255);
+                 margin: auto;
+                 font-size: 20px;
+             }
+        .down-nav a:hover {
+            background: linear-gradient(to right,#f84165,#fdd0d3);
+
+        }
+         .dd:hover .sub-nav {
+            height: 450px;
+            }
+
+        .shipin {
+            height: 350px;
+            width: 650px;
+            position: absolute;
+            top:610px;
+            left: 150px;
+            background-color: rgba(146, 79, 79, 0);
+        }
+        .gonggao {
+            width: 300px;
+            height: 350px;
+            position: absolute;
+            top:610px;
+            left: 800px;
+            background-color: rgb(0, 0, 0,.7);
+            
+        }
+        .qufu {
+            width:268px;
+            height: 110px;
+            position: absolute;
+            top:665px;
+            left: 1105px;
+            background-color: rgb(0, 0, 0,.7);
+
+        }
+        .qufu p {
+            display: block;
+            width:268px;
+            height: 30px;
+            background-color: rgb(2, 2, 2,.4);
+        }
+        .qufu a {
+            display: block;
+            font-size: 14px;color: rgb(0, 225, 255);line-height: 40px;
+            padding: 0 20px;
+        }
+        .qufu a:hover {
+            background: linear-gradient(to right,#f84165,#fdd0d3);
+            border-left: solid 4px rgb(255, 238, 0);
+        }
+        .gonggao .biaoti a {
+ 
+            display: inline-block;width: 90px;font-size: 16px;color: rgb(221, 221, 221);
+            margin:0 auto;
+            padding: 5px 5px 5px 15px;
+            border-bottom:  3px  solid rgb(0, 0, 0,0);
+
+        }
+        .gonggao .biaoti {
+            background-color: rgb(2, 2, 2,.4);
+            border-bottom: rgb(29, 28, 28) 2px solid;
+        }
+        .gonggao .biaoti a:hover {
+            color: rgb(243, 195, 36);
+            border-bottom:  3px  solid rgb(243, 195, 36);
+        }
+        .gonggao .xiang a {
+            display: block;
+            height: 50px;
+            margin: 13px;
+            padding: 13px;
+            text-align: center;
+            font-size: 15px;
+            color: rgb(221, 221, 221);
+        }
+        .gonggao .xiang a:hover {
+            background: linear-gradient(to right,#f84165,#fdd0d3);
+        }
+        .kaishiyouxi {
+            height: 192px;
+            width: 268px;
+            position: absolute;
+            top:780px;
+            left: 1105px;
+            background:url(image/开始游戏.png)
+        }
+        .liebiao {
+            height: 429px;
+            width: 268px;
+            position: absolute;
+            top:975px;
+            left: 1105px;
+            background:url(image/列表.png)
+        }
+        .yunmeng div {
+            width:100px;height:200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="diyihe">
+       
+        <span>
+            <a href="http://www.wooduan.com/" target="_blank"><img src="image/wdbLogo.png"  class="logo" style="position:absolute; left:300px; top:0px; "></a>
+        </span>
+         <a href="#"><img src="image/pmlogo.png"  class="logo2" style="position:absolute; left:480px; top:0px; "></a>
+         <p  class="diyihangwenben">
+             <a href="http://www.wooduan.com/" target="_blank">无端首页</a> &nbsp;|&nbsp;
+             <a href="http://pmxy.wan5d.com/" target="_blank">原版官网</a> &nbsp;|&nbsp;
+             <a href="http://i.wan5d.com/member/reg.php" target="_blank">点击注册</a> &nbsp;
+         </p>
+    </div>
+    <div id="header" class="dd";>
+        <a href="#">官网首页</a>
+        <a href="http://pmxy.wan5d.com/pm.php">游戏资料</a>
+        <a href="http://i.wan5d.com/member/login.php?t=8&referer=http%3A%2F%2Fi.wan5d.com%2F">账户管理</a>
+        <a href="http://pay.wan5d.com/">游戏充值</a>
+        <a href="http://kf.wan5d.com/">客服中心</a>
+        <a href="http://bbs.pmxy.wan5d.com/">官方论坛</a>
+ 
+        <div class="sub-nav" >
+            <ul class="sub-nav-inner">
+                <ol class="down-nav">
+                    <a href="http://www.wooduan.com/" target="_blank">无端官网</a>
+                    <a href="#">飘渺官网</a>
+                </ol>
+                <ol class="down-nav">
+                    <a href="http://pmxy.wan5d.com/html/zl/yxbj2.html" target="_blank">游戏介绍</a>
+                    <a href="http://pmxy.wan5d.com/html/zl/jbcz.html" target="_blank">新手指南</a>
+                    <a href="http://pmxy.wan5d.com/html/zl/fxcs.html" target="_blank">高手进阶</a>
+                    <a href="http://pmxy.wan5d.com/html/zl/sdbgj.html" target="_blank">三打白骨精</a>
+                    <a href="http://pmxy.wan5d.com/html/zl/lhzb.html" target="_blank">宠物养育</a>
+                    <a href="http://pmxy.wan5d.com/html/zl/fqxt.html" target="_blank">婚姻系统</a>
+                </ol>
+                <ol class="down-nav">
+                    <a href="http://i.wan5d.com/member/reg.php" target="_blank">注册</a>
+                    <a href="http://i.wan5d.com/member/login.php?t=8&referer=http%3A%2F%2Fi.wan5d.com%2F" target="_blank">登陆</a>
+                </ol>
+                <ol class="down-nav">
+                    <a href="http://pay.wan5d.com/" target="_blank">充值</a>
+                </ol>
+                <ol class="down-nav">
+                    <a href="#">当总</a>
+                    <a href="#">18K</a>
+                    <a href="#">木头</a>
+                    <a href="#">小悠</a>
+                    <a href="#">有事直接说，别问在不在</a>
+                </ol>
+                <ol class="down-nav">
+                    <a href="http://bbs.pmxy.wan5d.com/" target="_blank">论坛</a>
+                    <a href="https://tieba.baidu.com/f?kw=%C6%AE%C3%EC%CE%F7%D3%CE&fr=ala0&tpl=5" target="_blank">贴吧</a>
+                </ol>
+            </ul>
+        </div>
+
+    </div>
+
+  <div class="shipin">
+    <video src="image/宝宝花园.MP4" controls="controls" width="650px;" height="350px;"></video>
+  </div>
+  <div style="height: 430px;width: 950px;position: absolute;top:970px;left: 140px;">
+      <img src="image/yunmeng.png"  height="435px;"></img>
+  </div>
+  <div  class="yunmeng">
+    <div style="position: absolute;top: 970px;left: 900px;padding: 0 20px;"><a href="http://pmxy.wan5d.com/activity/xy/index.html"><img src="image/nav1.png" width="65px;"></a></div>
+    <div style="position: absolute;top: 1180px;left: 900px;padding: 0 20px;"><a href="http://pmxy.wan5d.com/activity/xy/index.html"><img src="image/nav2.png" width="65px;"></a></div>
+    <div style="position: absolute;top: 1050px;left: 1005px;padding: 0 20px;"><a href="http://pmxy.wan5d.com/activity/xy/index.html"><img src="image/nav3.png" width="65px;"></a></div>
+  </div>
+
+    <div class="gonggao">
+        <div class="biaoti">
+            <a href="#">游戏公告</a>
+            <a href="#">游戏咨询</a>
+        </div>
+   
+        <div class="xiang">
+            <ul>
+                <oi><a href="http://pmxy.wan5d.com/html//202106/2820.html" target="_blank;">《飘渺西游》6月4日维护公告</a></oi>
+                <oi><a href="http://pmxy.wan5d.com/html//202105/2819.html" target="_blank;">《飘渺西游》5月31日维护公告</a></oi>
+                <oi><a href="http://pmxy.wan5d.com/html//202105/2818.html" target="_blank;">《飘渺西游》5月24日维护公告</a></oi>
+                <oi><a href="http://pmxy.wan5d.com/html//202105/2817.html" target="_blank;">《飘渺西游》5月17日维护公告</a></oi>
+                <oi><a href="http://pmxy.wan5d.com/html//202104/2814.html" target="_blank;">《飘渺西游》4月29日更新公告</a></oi>
+            </ul>
+        </div>
+    </div>
+    <div class="qufu">
+        <p style="color: rgb(221,221,221);font-size: 14px;line-height: 14px;padding: 5px 5px 5px 15px;">区服推荐</p>
+        <a href="http://s1.wan5d.com/s12/">S12&nbsp;群星璀璨
+            <span style="display:inline-block;width:130px;text-align: right;color: rgb(21, 255, 0);font-size: 12px;line-height: 40px;">新服</span>
+        </a>
+        <a href="http://s1.wan5d.com/s100/">S100&nbsp;怀旧服
+            <span style="display:inline-block;width:135px;text-align: right;color: rgb(255, 0, 0);font-size: 12px;line-height: 40px;">火爆</span>
+        </a>
+    </div>
+
+    <div class="kaishiyouxi">
+        <a style="display:block;height: 140px;width: 268px;" href="http://pmxy.wan5d.com/server.php"></a>
+        <a style="display:inline-block;height: 50px;width: 120px;" href="http://i.wan5d.com/member/reg.php"> </a>
+        <a style="display:inline-block;height: 50px;width: 5px;" href="#"></a>
+        <a style="display:inline-block;height: 50px;width: 120px;" href="http://pay.wan5d.com/"></a>
+    </div>
+    
+    
+    <div class="liebiao">
+        <a style="display:inline-block;height: 50px;width: 268px;" href="http://pmxy.wan5d.com/pm.php"></a>
+        <a style="display:inline-block;height: 43px;width: 268px;" href="http://www.wan5d.com/html/zl/jbcz.html"> </a>
+        <a style="display:inline-block;height: 43px;width: 268px;" href="http://www.wan5d.com/html/zl/fxcs.html"></a>
+        <a style="display:inline-block;height: 43px;width: 268px;" href="http://www.wan5d.com/html/zl/zhuagui.html"></a>
+        <a style="display:inline-block;height: 43px;width: 268px;" href="http://www.wan5d.com/html/zl/gljg.html"></a>
+        <a style="display:inline-block;height: 43px;width: 268px;" href="http://www.wan5d.com/html/zl/hdzb.html"></a>
+        <a style="display:inline-block;height: 41px;width: 268px;" href="http://www.wan5d.com/html/zl/cwhd.html"></a>
+        <a style="display:inline-block;height: 43px;width: 268px;" href="http://www.wan5d.com/html/zl/jzxt.html"></a>
+        <a style="display:inline-block;height: 43px;width: 268px;" href="http://www.wan5d.com/html/zl/rwjnxx.html"></a>
+    </div>
+    <div style="height: 100px;position: absolute;top:960px;left:1310px;">
+        <img src="image/difunv.png">
+    </div>
+    <div style="height: 50px;position: absolute;top:1215px;left:75px;">
+        <img src="image/yunmengnv.png" height="250px">
+    </div>
+    <div style="height: 30px;width:100%;position: absolute;top:2270px;">
+        <p style="text-align: center;font-size: 20px;color: white;">玩家投稿截图</p>
+        <p style="text-align: center;font-size: 20px;color: white;">投稿人：烟栀</p>
+        <hr><hr><hr>
+    </div>
+    <marquee  direction="right" style="position: absolute;top:150px;left:0px;">
+        <img src="image/pmxy_logo.png" style="height: 75px;">
+        </marquee>
+     <marquee  direction="right" style="position: absolute;top:2345px;right: 0px;">
+        <img src="image/1.jpg" style="height: 200px;">
+        <img src="image/2.jpg" style="height: 200px;">
+        <img src="image/3.jpg" style="height: 200px;">
+        <img src="image/4.jpg" style="height: 200px;">
+        <img src="image/5.jpg" style="height: 200px;">
+        <img src="image/6.png" style="height: 200px;">
+    </marquee>
+    <marquee  direction="left" style="position: absolute;top:2345px;right:0px;">
+        <img src="image/1.jpg" style="height: 200px;">
+        <img src="image/2.jpg" style="height: 200px;">
+        <img src="image/3.jpg" style="height: 200px;">
+        <img src="image/4.jpg" style="height: 200px;">
+        <img src="image/5.jpg" style="height: 200px;">
+        <img src="image/6.png" style="height: 200px;">
+    </marquee>
+
+</body>
+</html>
+
